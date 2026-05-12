@@ -50,8 +50,6 @@ def get_channel_videos(channel_id, max_results=50):
 
 
 if __name__ == "__main__":
-    # Replace with your YouTube Channel ID
-    # Find it: go to your channel → About → Share → Copy channel ID
     CHANNEL_ID = "UCAov2BBv1ZJav0c_yHEciAw"
     df = get_channel_videos(CHANNEL_ID)
     print(df.head())
