@@ -1,0 +1,10 @@
+requests
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+google-api-python-client
+python-dotenv
+sqlalchemy
+jupyter
