@@ -26,7 +26,7 @@ def clean_youtube():
     return df
 
 
-def save_to_database(yt_df, ig_df):
+def save_to_database(yt_df):
     engine = create_engine("sqlite:///data/engagement.db")
     if yt_df is not None:
         yt_df.to_sql("youtube", engine, if_exists="replace", index=False)
@@ -36,4 +36,4 @@ def save_to_database(yt_df, ig_df):
 
 if __name__ == "__main__":
     yt = clean_youtube()
-    save_to_database(yt, ig)
+    save_to_database(yt)
